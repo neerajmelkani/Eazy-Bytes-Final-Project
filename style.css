@@ -1,0 +1,32 @@
+:root{--bg:#f6f7fb;--card:#ffffff;--muted:#6b7280;--accent:#1f2937}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto;background:var(--bg);color:var(--accent)}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;background:#0b1220;color:#fff;position:sticky;top:0;z-index:10}
+.brand{font-weight:800;font-size:20px} .brand span{color:#60a5fa}
+.navlinks a{color:#cbd5e1;margin:0 10px;text-decoration:none;font-weight:600;opacity:.95}
+.searchwrap{display:flex;gap:8px;align-items:center}
+.searchwrap input{padding:8px 10px;border-radius:10px;border:none;min-width:260px}
+.searchwrap button{padding:8px 12px;border-radius:8px;border:none;background:#2563eb;color:#fff;cursor:pointer}
+
+.layout{display:grid;grid-template-columns:2fr 1fr;gap:20px;padding:20px;max-width:1200px;margin:18px auto}
+.card{background:var(--card);padding:14px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+.headline{display:flex;gap:12px;align-items:center;margin-bottom:12px}
+.headline img{width:220px;height:120px;object-fit:cover;border-radius:8px}
+.news-list{display:flex;flex-direction:column;gap:12px}
+.article{display:flex;gap:12px;padding:12px;border-radius:10px;transition:all .15s;cursor:pointer;align-items:center}
+.article:hover{transform:translateY(-4px);box-shadow:0 10px 24px rgba(2,6,23,0.08)}
+.article img{width:120px;height:80px;object-fit:cover;border-radius:6px;flex-shrink:0}
+.article .meta{flex:1}
+.article .meta h4{margin:0 0 6px;font-size:16px}
+.article .meta p{margin:0;color:var(--muted);font-size:14px}
+.center{text-align:center;margin:16px 0}
+.side-col .card{margin-bottom:12px}
+#trending li{padding:6px 0;border-bottom:1px dashed #eee;font-size:14px;color:var(--muted)}
+
+.footer{text-align:center;padding:18px;color:#9ca3af;margin-top:30px}
+
+/* responsive */
+@media(max-width:900px){
+  .layout{grid-template-columns:1fr;padding:12px}
+  .headline img{width:120px;height:80px}
+  .searchwrap input{min-width:120px}
+}

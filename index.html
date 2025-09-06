@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>News Aggregator — Interactive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">News<span>Hub</span></div>
+    <nav class="navlinks">
+      <a href="#" data-cat="">Home</a>
+      <a href="#" data-cat="tech">Tech</a>
+      <a href="#" data-cat="world">World</a>
+      <a href="#" data-cat="business">Business</a>
+      <a href="#" data-cat="sports">Sports</a>
+    </nav>
+    <div class="searchwrap">
+      <input id="search" placeholder="Search news, keywords or sources..." />
+      <button id="searchBtn">Search</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="main-col">
+      <div id="topHeadline" class="headline card"></div>
+      <div id="newsList" class="news-list"></div>
+      <div id="loadMoreWrap" class="center"><button id="loadMore">Load more</button></div>
+    </section>
+
+    <aside class="side-col">
+      <div class="card">
+        <h3>Sponsored</h3>
+        <div id="sponsored"></div>
+      </div>
+      <div class="card">
+        <h3>Trending</h3>
+        <ul id="trending"></ul>
+      </div>
+      <div class="card">
+        <h3>Filters</h3>
+        <label><input type="checkbox" id="onlyWithImage"> Only with images</label>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="footer">© 2025 NewsHub — Built with Java Spring Boot</footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
